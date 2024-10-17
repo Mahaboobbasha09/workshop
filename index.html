@@ -21,7 +21,7 @@
         .container1{
             background-image: url(img3.avif);
             background-attachment: fixed;
-            height: 100vh;
+            height: 120vh;
             width: 100%;
             text-align: center;
             padding-top: 2%;
@@ -40,13 +40,41 @@
         }
         h1{
             padding-bottom: 1%;
+            font-family: cursive;
         }
         a{
             text-decoration: none;
             color: black;
             padding-left: 10px;
+            font-family: cursive;
+        }
+        a:hover{
+            text-shadow: 1px 1px 6px black;
         }
         .child{
+            border: 1px solid black;
+            border-radius: 6px;
+            margin-left: 15%;
+            margin-top: 8%;
+            height: 60vh;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 254, 254, 0.361);
+            background-attachment: auto;
+        }
+        .child1{
+            border: 1px solid black;
+            border-radius: 6px;
+            margin-left: 15%;
+            margin-top: 10%;
+            height: 60vh;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 254, 254, 0.361);
+        }
+        .child2{
             border: 1px solid black;
             border-radius: 6px;
             margin-left: 15%;
@@ -69,19 +97,23 @@
         .childb{
             padding-top: 13%;
             text-align: center;
-            font-family: sans-serif;
+            font-family: cursive;
+        }
+        .foot{
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="play">
         <div class="nav">
             <h1>Adorable Puppies</h1>
             <a href="#play">playful pups</a>
-            <a href="#">sleepy pups</a>
-            <a href="#">Curious pups</a>
+            <a href="#sleepy">sleepy pups</a>
+            <a href="#curious">Curious pups</a>
         </div>
-        <div class="child" id="play">
+        <div class="child" >
             <div class="childa">
                 <img src="img1.avif" alt="des">
             </div>
@@ -91,8 +123,8 @@
             </div>
         </div>
     </div>
-    <div class="container1">
-        <div class="child" id="play">
+    <div class="container1" id="sleepy">
+        <div class="child1" >
             <div class="childb">
                 <h1>Sleepy puppies</h1>
                 <p>Puppies need lots of sleep to grow big and strong. The can sleep upto 20 hours a day!</p>
@@ -102,8 +134,8 @@
             </div>
         </div>
     </div>
-    <div class="container2">
-        <div class="child" id="play">
+    <div class="container2" id="curious">
+        <div class="child2" >
             <div class="childb">
                 <h1>Curious puppies</h1>
                 <p>Puppies are Curious and love to explore their surroundings. this helps them learn and grow!</p>
@@ -113,5 +145,10 @@
             </div>
         </div>
     </div>
+    <footer style="background-color: black; height:5vh;">
+        <div class="foot">
+            @10k coders 
+        </div>
+    </footer>
 </body>
 </html>
